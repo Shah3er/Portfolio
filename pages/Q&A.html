@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--fonts and styles-->
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="Java Script" href="../scripts/main.js">
+</head>
+<body>
+    <!--Logo-->
+    <img src="../images/Updated skeli 2.png" width="100" height="65">
+    <h1 style="text-align:center;">My portfolio</h1>
+    <!-- Nav Bar -->
+    <div id="wassup">
+        <ul>
+            <li><a class="active" href="../index.html">Home</a></li>
+            <li><a href="projects.html">Tech experience</a></li>
+            <li><a href="Assigments.html">Assignments</a></li>
+            <li><a href="About-me.html">About me</a></li>
+            <li><a href="Q&A.html">Q&A</a></li>
+        </ul>
+    </div>
+    <!--Q%A questions-->
+      <h1 style="text-align: center;">Q&A</h1>
+      <!--first question-->
+      <div id=LM>
+      <p style="text-align: center;">Before we continue...please click on the date to find out what day it is</p>
+      <div class="button">
+      <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Date and Time.</button>
+        <p id="demo"></p>
+      </div>
+    </div>
+    <!--second question-->
+<div id="LM">
+    <div class="top">
+    <p style="text-align: center;">Tell me how are you feeling</p>
+    </div>
+    <div class="success">
+    <button class="btn success">Happy</button>
+    </div>
+    <div class="info">
+    <button class="btn info">Sad</button>
+    </div>
+    <div class="warning">
+    <button class="btn warning">Alright</button>
+    </div>
+    <div class="danger">
+    <button class="btn danger">Angry</button>
+    </div>
+    <div class="default">
+    <button class="btn default">neutral</button>
+    </div>
+
+    <input id="age"/>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+<script>
+   function myFunction() {
+      var age, voteable;
+      age = Number(document.getElementById("age").value);
+      if (isNaN(age)) {
+        voteable = "hope you feel better soon";
+      } else {
+        voteable =MessageChannel="glad to hear it";
+      }
+      document.getElementById("demo").innerHTML = voteable;
+    }
+    </script>
+</div>
+
+<!--third question-->
+<div id="LM">
+<p style="text-align: center;">What is your most favourite sport?</p>
+
+<input id="age"/>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+    <script>
+    function myFunction() {
+      var age, voteable;
+      age = Number(document.getElementById("age").value);
+      if (isNaN(age)) {
+        voteable = "Good choice";
+      } else {
+        voteable =MessageChannel="Good choice";
+      }
+      document.getElementById("demo").innerHTML = voteable;
+    }
+    </script>
+</div>
+
+</div>
+
+<!--fourth question-->
+<div id="LM">
+<p style="text-align: center;">Your favourite universe?</p>
+<form>
+    <input type="radio" id="marvel" name="gender" value="male">
+    <label for="marvel">Marvel</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="dc">DC</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+  </form> 
+</div>
+<!--fifth question-->
+<div id="LM">
+    <p style="text-align: center;">How do you like to travel(choose as many as you like)</p>
+    <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="walking">
+        <label for="vehicle3"> Walking</label><br><br>
+      </form> 
+</div>
+
+<div id="LM">
+    <p style="text-align: center;">What is your favourite food?</p>
+    <input id="age"/>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+    <script>
+    function myFunction() {
+      var age, voteable;
+      age = Number(document.getElementById("age").value);
+      if (isNaN(age)) {
+        voteable = "Good choice";
+      } else {
+        voteable =MessageChannel="Good choice";
+      }
+      document.getElementById("demo").innerHTML = voteable;
+    }
+    </script> 
+</div>
+
+<!--fifth question-->
+<div id="LM">
+    <p style="text-align: center;">What is your favourite video game?</p>
+    <input id="age"/>
+
+    <button onclick="myFunction()">Click me</button>
+    
+    <p id="demo"></p>
+        <script>
+        function myFunction() {
+          var age, voteable;
+          age = Number(document.getElementById("age").value);
+          if (isNaN(age)) {
+            voteable = "Good choice";
+          } else {
+            voteable =MessageChannel="Good choice";
+          }
+          document.getElementById("demo").innerHTML = voteable;
+        }
+        </script> 
+</div>
+
+
+
+    
+</body>
+</html>

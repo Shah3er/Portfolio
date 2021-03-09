@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--fonts and styles-->
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -8,26 +9,41 @@
     <title>My Portfolio</title>
 </head>
 <link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/slideshow.css">
 <body>
+  <!--Logo-->
     <img src="images/Updated skeli 2.png" width="100" height="65">
     <h1 style="text-align:center;">My portfolio</h1>
     <!-- Nav Bar -->
-    <ul>
+    <div id="wassup">
+      <ul>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="pages/projects.html">Tech experience</a></li>
         <li><a href="pages/Assigments.html">Assignments</a></li>
         <li><a href="pages/About-me.html">About me</a></li>
+        <li><a href="pages/Q&A.html">Q&A</a></li>
       </ul>
-    <div class="Center">
-        <div id="centertext">
-            <h2 style="text-align: center;">Hello and welcome to my website. In this website you will know a bit about me.</h2>
-            <h2 style="text-align: center;">Hope you learn something and enjoy</h2>   
-        </div>
     </div>
-       <nav>
-           <ul class="main_menu">
-           </ul>
-       </nav> 
-   
+    <!--homepage intro-->
+    <div id="centertext">
+      <p>Hello and welcome to my website.</p>
+      <p>In this website, you will learn a bit about me...enjoy</p>
+      <p>Oh and here is a slideshow of beautiful nature :)</p>
+        <!--slideshow-->
+        <div class="slider-frame">
+          <div class="slide-images">
+            <div class="image-container">
+              <img src="images/ModrenTech.jpg" height="625" width="1099">
+            </div>
+            <div class="image-container">
+              <img src="images/World cup ball.jpeg" height="625" width="1099">
+            </div>
+            <div class="image-container">
+              <img src="images/last one.jpg" height="625" width="1099">
+            </div>
+        </div>
+      </div>
+    </div>  
+
 </body>
 </html>

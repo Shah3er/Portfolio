@@ -1,15 +1,17 @@
+/* background */
 body {
-color: aqua;
-font-size: 3ems;
-background-image: url("../images/Dark\ blue.jpg");
-background-repeat: no-repeat,repeat; 
-background-size: 1500px 3000px;
+  color: aqua;
+  font-size: 3ems;
+  background-image: url("../images/Dark\ blue.jpg");
+  background-repeat: no-repeat,repeat; 
+  background-size: 1500px 3000px;
 }
+/* standard content box */
 .box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 18em;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10em;
+}
   
   .box :first-child {
       align-self: center;
@@ -17,40 +19,116 @@ background-size: 1500px 3000px;
 #centertext{
     margin: 20%;
     background-color: royalblue;
-    width: 300px;
+    width: 295px;
     border: 15px solid aqua;
     padding: 50px;
     margin: 20px;
-    height: 450px;
-  }
-  #one, #two{
+    height: 460px;
+}
+  #one, #four{
     margin: 20%;
     background-color: royalblue;
     width: 300px;
     border: 15px solid aqua;
     padding: 50px;
-    margin: 20px;
-    height: 450px;
+    /* top | right | bottom | left */
+    margin: 25px 10% 2em 15%;
+    height: 490px;
   }
-    #four, #five{
-    float: right;
+    #two, #five{
     margin: 20%;
     background-color: royalblue;
     width: 300px;
     border: 15px solid aqua;
     padding: 50px;
-    margin: 20px;
-    height: 450px;
+     margin: 25px;
+    height: 490px;
   }
   #IJ{
     margin: 20%;
     background-color: royalblue;
-    width: 300px;
+    width: 250px;
     border: 15px solid aqua;
     padding: 50px;
-    margin: 20px;
-    height: 450px;   
+    margin: 25px;
+    height: 445px;   
   }
+
+  #LM{
+    margin: 20%;
+    background-color: royalblue;
+    width: 1070px;
+    border: 15px solid aqua;
+    padding: 50px;
+    margin: 25px;
+    height: 185px;  
+  }
+/* buttons */
+  .stay{
+    margin: 1000px;
+  }
+
+  .top{
+    margin:-40px;
+  }
+
+  .button{ 
+    height: 200px;
+    position: relative; 
+  }
+  .button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* Green */
+  .success {
+    color: lawngreen;
+  }
+  
+  
+  
+  /* Blue */
+  .info {
+    color: darkblue;
+  }
+  
+  
+  
+  /* Orange */
+  .warning {
+    color: orange;
+  }
+  
+  
+  
+  /* Red */
+  .danger {
+    color: red;
+  }
+  
+  
+  
+  /* Gray */
+  .default {
+    color: black;
+  }
+  
+  
+/* fonts */
   p{
     font-family: 'Reggae One', cursive; 
   }
@@ -61,19 +139,26 @@ background-size: 1500px 3000px;
     font-family: 'Reggae One', cursive; 
   }
 
-
-
+/* logo */
 img{
     float:left;
 }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: aqua;
-  }
-  
+/* navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: royalblue;
+}
+
+/* navbar border */
+#wassup{
+  border-style: solid;
+  border-color: aqua;
+}
+ 
+/* navbar words */
   li {
     float: left;
   }
@@ -81,14 +166,32 @@ img{
     font-family: 'Reggae One', cursive; 
   }
   
+  /* navbar color text */
   li a {
     display: block;
-    color: black;
+    color: aqua;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
+  /* navbar cursor color */
   li a:hover {
-    background-color: white;
+    background-color: blue;
   }
+/* tech expeirence images */
+  #sup{
+    float: right;
+    margin-left: 360px;
+    margin-top: -600px;
+  }
+
+  #sup{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 51px 1em;
+  }
+    
+    #sup :first-child {
+        align-self: center;
+    }
