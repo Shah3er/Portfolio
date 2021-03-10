@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My portfolio/Q&A</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="Java Script" href="../scripts/main.js">
 </head>
@@ -59,19 +59,19 @@
 
     <input id="age"/>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="feeling()">Click me</button>
 
-<p id="demo"></p>
+<p id="feelingresponse"></p>
 <script>
-   function myFunction() {
-      var age, voteable;
-      age = Number(document.getElementById("age").value);
-      if (isNaN(age)) {
+   function feeling() {
+      var mood, voteable;
+      mood = document.getElementById("age").value;
+      if (mood=="Sad" || mood=="Angry") {
         voteable = "hope you feel better soon";
       } else {
         voteable =MessageChannel="glad to hear it";
       }
-      document.getElementById("demo").innerHTML = voteable;
+      document.getElementById("feelingresponse").innerHTML = voteable;
     }
     </script>
 </div>
@@ -80,25 +80,23 @@
 <div id="LM">
 <p style="text-align: center;">What is your most favourite sport?</p>
 
-<input id="age"/>
+<input id="sport"/>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="sports()">Click me</button>
 
-<p id="demo"></p>
-    <script>
-    function myFunction() {
-      var age, voteable;
-      age = Number(document.getElementById("age").value);
-      if (isNaN(age)) {
-        voteable = "Good choice";
+<p id="sportss"></p>
+<script>
+   function sports() {
+      var fun, voteable;
+      fun = document.getElementById("sport").value;
+      if (fun=="soccer" || fun=="basketball") {
+        voteable = "good choice";
       } else {
-        voteable =MessageChannel="Good choice";
+        voteable =MessageChannel="nice";
       }
-      document.getElementById("demo").innerHTML = voteable;
+      document.getElementById("sportss").innerHTML = voteable;
     }
     </script>
-</div>
-
 </div>
 
 <!--fourth question-->
@@ -107,7 +105,7 @@
 <form>
     <input type="radio" id="marvel" name="gender" value="male">
     <label for="marvel">Marvel</label><br>
-    <input type="radio" id="female" name="gender" value="female">
+    <input type="radio" id="dc" name="gender" value="female">
     <label for="dc">DC</label><br>
     <input type="radio" id="other" name="gender" value="other">
     <label for="other">Other</label>
@@ -128,45 +126,47 @@
 
 <div id="LM">
     <p style="text-align: center;">What is your favourite food?</p>
-    <input id="age"/>
+  
+    <input id="food"/>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="foods()">Click me</button>
 
-<p id="demo"></p>
-    <script>
-    function myFunction() {
-      var age, voteable;
-      age = Number(document.getElementById("age").value);
-      if (isNaN(age)) {
-        voteable = "Good choice";
+<p id="foodss"></p>
+<script>
+   function foods() {
+      var fod, voteable;
+      fod = document.getElementById("food").value;
+      if (fod=="beef" || fod=="pasta") {
+        voteable = "yumm";
       } else {
-        voteable =MessageChannel="Good choice";
+        voteable =MessageChannel="good";
       }
-      document.getElementById("demo").innerHTML = voteable;
+      document.getElementById("foodss").innerHTML = voteable;
     }
-    </script> 
+    </script>
 </div>
 
 <!--fifth question-->
 <div id="LM">
     <p style="text-align: center;">What is your favourite video game?</p>
-    <input id="age"/>
+   
+    <input id="game"/>
 
-    <button onclick="myFunction()">Click me</button>
+    <button onclick="games()">Click me</button>
     
-    <p id="demo"></p>
-        <script>
-        function myFunction() {
-          var age, voteable;
-          age = Number(document.getElementById("age").value);
-          if (isNaN(age)) {
-            voteable = "Good choice";
+    <p id="gamess"></p>
+    <script>
+       function games() {
+          var fod, voteable;
+          gam = document.getElementById("game").value;
+          if (gam=="minecraft" || gam=="COD") {
+            voteable = "legend";
           } else {
-            voteable =MessageChannel="Good choice";
+            voteable =MessageChannel="nice";
           }
-          document.getElementById("demo").innerHTML = voteable;
+          document.getElementById("gamess").innerHTML = voteable;
         }
-        </script> 
+        </script>
 </div>
 
 
