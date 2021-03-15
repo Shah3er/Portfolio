@@ -2,14 +2,14 @@
 /*assignment buttons*/
 .assignment-buttons{
     text-align: center;
-    margin: 3em;
+    margin: 4em;
 }
 /*buttons*/
-.assignment-buttons-1,.assignment-buttons-2,
-.assignment-buttons-3,.assignment-buttons-4,
-.assignment-buttons-5,.assignment-buttons-6,
-.assignment-buttons-7,.assignment-buttons-8,
-.assignment-buttons-9,.assignment-buttons-10{
+.block1,.block2,
+.block3,.block4,
+.block5,.block6,
+.block7,.block8,
+.block9,.block10{
     margin: 60px;
     padding:2em;
     width: 425px;
@@ -24,10 +24,10 @@
     background-color: royalblue;
 }
 /*hovering buttons*/
-.assignment-buttons-1:hover,.assignment-buttons-2:hover,
-.assignment-buttons-3:hover,.assignment-buttons-4:hover,
-.assignment-buttons-5:hover,.assignment-buttons-6:hover,
-.assignment-buttons-7:hover,.assignment-buttons-8:hover,
-.assignment-buttons-9:hover,.assignment-buttons-10:hover{
+.block1:hover,.block2:hover,
+.block3:hover,.block4:hover,
+.block5:hover,.block6:hover,
+.block7:hover,.block8:hover,
+.block9:hover,.block10:hover{
     color: aqua;
     background-color: darkblue}
