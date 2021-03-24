@@ -1,7 +1,6 @@
 /* background */
 body {
   color: aqua;
-  font-size: 3ems;
   background-image: url("../images/Dark\ blue.jpg");
   background-repeat: no-repeat,repeat; 
   background-size: 1500px 3000px;
