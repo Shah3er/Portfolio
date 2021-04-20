@@ -147,8 +147,8 @@ function encrypt(){
     //this command adds the first letter and "!!" of your word
      text += first + "!! ";
   }
-    //this command outputs your encryption letter and also replaces your specified letters with the most common letters used in the world//
-    document.getElementById("output").innerHTML =text.replace(/2/g,"1").replace(/a/g,"q").replace(/r/g,"k").replace(/3/g,"9").replace(/2/g,"7").replace(/b/g,"x").replace(/n/g,"f").replace(/s/g,"b");   
+    //this command outputs your encryption letter and also replaces your specified letters and numbers with numbers//
+    document.getElementById("output").innerHTML =text.replace(/a/g,"1").replace(/b/g,"3").replace(/c/g,"5").replace(/d/g,"7").replace(/e/g,"9").replace(/f/g,"2").replace(/g/g,"4").replace(/h/g,"6");   
 }
 //Decryption//
 function Decrypt(){
@@ -169,6 +169,6 @@ function Decrypt(){
     //this adds the last letter to the front of the word and then it adds it to the txt//
      txt += last + (cipherlist[i]).slice(0,-3) + " ";
     }
-    //this command outputs your decryption letter and also replaces your encryption letters with the most common letters and numbers used in the world//
-    document.getElementById("input").innerHTML =txt.replace(/1/g,"2").replace(/q/g,"a").replace(/k/g,"r").replace(/9/g,"3").replace(/7/g,"2").replace(/x/g,"b").replace(/f/g,"n").replace(/b/g,"s");
+    //this command outputs your decryption letter and also replaces your encryption letters and numbers with letters//
+    document.getElementById("input").innerHTML =txt.replace(/1/g,"a").replace(/3/g,"b").replace(/5/g,"c").replace(/7/g,"d").replace(/9/g,"e").replace(/2/g,"f").replace(/4/g,"g").replace(/6/g,"h");
 }
