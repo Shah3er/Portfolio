@@ -81,19 +81,19 @@ function Counts(){
 {
   if ( i%4 === 0 && i%10 === 0 )
   {
-    document.getElementById("Count").innerHTML= i + " Ten&four";
+    console.log= i + " Ten&four";
   }
   else if ( i%4 === 0 ) 
   {
-    document.getElementById("Count").innerHTML= i+ " Four";
+    console.log= i+ " Four";
   }
   else if ( i%10 === 0 ) 
   {
-    document.getElementById("Count").innerHTML= i+ " Ten";
+    console.log= i+ " Ten";
   }
   else
   {
-    document.getElementById("Count").innerHTML=i;
+    console.log= i;
   }
 }
 }
@@ -127,9 +127,48 @@ function Triangles(){
     
 document.getElementById("Tri").innerHTML = output;
 }
-function function9(){
-    alert("Assignment 9 coming soon");
+//Encryption//
+function encrypt(){
+  //This is the prompt//
+  let splits = prompt ("Encrypt whatever you want");
+  //These are the variables//
+  let text = "";
+  let first="";
+  let wordlist = splits.split(" "); 
+  //reverses the letters and words//
+  wordlist.reverse();
+
+  //This is the for loop for the words in the wordlist//
+  for(let i = 0; i < wordlist.length; i= i+1){
+    //this saves the first letter of the word you type//
+     first = wordlist[i][0]; 
+    //This adds the words from the text string but the letter will be in slice command so it will slice of the word//
+     text += (wordlist[i]).slice(1);
+    //this command adds the first letter and "!!" of your word
+     text += first + "!! ";
+  }
+    //this command outputs your encryption letter and also replaces your specified letters with the most common letters used in the world//
+    document.getElementById("output").innerHTML =text.replace(/2/g,"1").replace(/a/g,"q").replace(/r/g,"k").replace(/3/g,"9").replace(/2/g,"7").replace(/b/g,"x").replace(/n/g,"f").replace(/s/g,"b");   
 }
-function function10(){
-    alert("Assignment 10 coming soon");
+//Decryption//
+function Decrypt(){
+  //This is the prompt//
+    let ciphertext= prompt ("Decrypt whatever you want");
+    //These are the variables//
+    let txt="";
+    let last="";
+    let cipherlist= ciphertext.split(" ");
+    //reverses the letters and words//
+    cipherlist.reverse();
+    //This is the for loop for the words in the cipherlist//
+    for(let i = 0 ; i < cipherlist.length ; i=i+1){
+      //this command sets a constant for the 3rd letter of each word you type on the cipherlist//
+      const dep = cipherlist[i].length -3;
+    //this saves the 3rd letter//
+     last = cipherlist[i][dep];
+    //this adds the last letter to the front of the word and then it adds it to the txt//
+     txt += last + (cipherlist[i]).slice(0,-3) + " ";
+    }
+    //this command outputs your decryption letter and also replaces your encryption letters with the most common letters and numbers used in the world//
+    document.getElementById("input").innerHTML =txt.replace(/1/g,"2").replace(/q/g,"a").replace(/k/g,"r").replace(/9/g,"3").replace(/7/g,"2").replace(/x/g,"b").replace(/f/g,"n").replace(/b/g,"s");
 }
